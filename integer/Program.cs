@@ -107,9 +107,69 @@ namespace integer
             int birlik = A % 100 % 10;
             Console.WriteLine($"orny auskan can={juzdik*10 + ondyk * 100 + birlik }");
         }
+        static void bool1()
+        {
+            int a = int.Parse(Console.ReadLine());
+            bool m = (a >0);
+            if (m)
+                Console.WriteLine("Число A является положительным");
+            else
+                Console.WriteLine("Число A является отрицательный или ноль");
+
+        }
+        static void if1()
+        {
+            Console.Write("san engiz:");
+            int a = int.Parse(Console.ReadLine());
+            if (a > 0)
+            {
+                a++;
+                Console.WriteLine($"a+1={a}");
+            }
+            else
+                Console.WriteLine($"a= {a}");
+        }
+        static void if2()
+        {
+            Console.Write("san engiz:");
+            int a = int.Parse(Console.ReadLine());
+            if (a > 0)
+            Console.WriteLine($"a+1={a++}");
+            else
+                Console.WriteLine($"a-(-2)= {a+2}");
+        }
+        static void if3()
+        {
+            Console.Write("san engiz:");
+            int a = int.Parse(Console.ReadLine());
+            if (a > 0)
+                Console.WriteLine($"a+1={a++}");
+            else if(a<0)
+                Console.WriteLine($"a-(-2)= {a + 2}");
+            else
+                Console.WriteLine(10);
+        }
+        static void if4()
+        {
+            Console.Write("san engiz:");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("san engiz:");
+            int b = int.Parse(Console.ReadLine());
+            Console.Write("san engiz:");
+            int c = int.Parse(Console.ReadLine());
+            int sum = 0;
+            if (a > 0 && b > 0 && c > 0)
+            {
+                sum++;
+            }
+                Console.WriteLine($"on sandar sany={sum}");
+            
+            
+        }
+
         static void Main(string[] args)
         {
-            int13();
+            if4();
 
             Console.ReadKey();
         }
