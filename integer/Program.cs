@@ -157,19 +157,60 @@ namespace integer
             int b = int.Parse(Console.ReadLine());
             Console.Write("san engiz:");
             int c = int.Parse(Console.ReadLine());
-            int sum = 0;
-            if (a > 0 && b > 0 && c > 0)
-            {
-                sum++;
-            }
-                Console.WriteLine($"on sandar sany={sum}");
-            
-            
+            int s = 0;
+            if (a > 0)
+                s++;
+            if (b > 0)
+                s++;
+            if (c > 0)
+                s++;
+            Console.WriteLine($"on sandar sany={s}");
+                                
         }
 
+        static void if5()
+        {
+            Console.Write("san engiz:");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("san engiz:");
+            int b = int.Parse(Console.ReadLine());
+            Console.Write("san engiz:");
+            int c = int.Parse(Console.ReadLine());
+            int s = 0;
+            int x = 0;
+            if (a > 0)
+                s++;
+            else if (a < 0)
+                x++;
+            if (b > 0)
+                s++;
+            else if (b < 0)
+                x++;
+            if (c > 0)
+                s++;
+            else if (c < 0)
+                x++;
+            Console.WriteLine($"on sandar sany: {s}");
+            Console.WriteLine($"teris sandar sany: {x} ");
+
+        }
+        static void if6()
+        {
+            Console.Write("san engiz:");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("san engiz:");
+            int b = int.Parse(Console.ReadLine());
+            int s = 0;
+            if (a > 0)
+                s++;
+            if (b > 0)
+                s++;
+           Console.WriteLine($"on sandar sany={s}");
+
+        }
         static void Main(string[] args)
         {
-            if4();
+            if5();
 
             Console.ReadKey();
         }
