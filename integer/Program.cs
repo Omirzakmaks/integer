@@ -71,13 +71,13 @@ namespace integer
         {
             Console.Write("Uw oryndy san engiz:  ");
             int A = int.Parse(Console.ReadLine());
-             Console.WriteLine($"juzdik= {A/100}");
+            Console.WriteLine($"juzdik= {A / 100}");
         }
         static void int10()
         {
             Console.Write("Uw oryndy san engiz:  ");
             int A = int.Parse(Console.ReadLine());
-            Console.WriteLine($"birlik= {(A % 100)%10}, ondyk= {(A % 100) / 10}");
+            Console.WriteLine($"birlik= {(A % 100) % 10}, ondyk= {(A % 100) / 10}");
         }
 
         static void int11()
@@ -85,9 +85,9 @@ namespace integer
             Console.Write("Uw oryndy san engiz: ");
             int A = int.Parse(Console.ReadLine());
             int juzdik = A / 100;
-            int ondyk= A % 100 / 10;
-            int birlik = A % 100%10;
-            Console.WriteLine($"kobeitindi={juzdik* ondyk* birlik}");
+            int ondyk = A % 100 / 10;
+            int birlik = A % 100 % 10;
+            Console.WriteLine($"kobeitindi={juzdik * ondyk * birlik}");
         }
         static void int12()
         {
@@ -96,7 +96,7 @@ namespace integer
             int juzdik = A / 100;
             int ondyk = A % 100 / 10;
             int birlik = A % 100 % 10;
-            Console.WriteLine($"orny auskan can={juzdik + ondyk *10+ birlik*100}");
+            Console.WriteLine($"orny auskan can={juzdik + ondyk * 10 + birlik * 100}");
         }
         static void int13()
         {
@@ -105,12 +105,12 @@ namespace integer
             int juzdik = A / 100;
             int ondyk = A % 100 / 10;
             int birlik = A % 100 % 10;
-            Console.WriteLine($"orny auskan can={juzdik*10 + ondyk * 100 + birlik }");
+            Console.WriteLine($"orny auskan can={juzdik * 10 + ondyk * 100 + birlik }");
         }
         static void bool1()
         {
             int a = int.Parse(Console.ReadLine());
-            bool m = (a >0);
+            bool m = (a > 0);
             if (m)
                 Console.WriteLine("Число A является положительным");
             else
@@ -134,9 +134,9 @@ namespace integer
             Console.Write("san engiz:");
             int a = int.Parse(Console.ReadLine());
             if (a > 0)
-            Console.WriteLine($"a+1={a++}");
+                Console.WriteLine($"a+1={a++}");
             else
-                Console.WriteLine($"a-(-2)= {a+2}");
+                Console.WriteLine($"a-(-2)= {a + 2}");
         }
         static void if3()
         {
@@ -144,7 +144,7 @@ namespace integer
             int a = int.Parse(Console.ReadLine());
             if (a > 0)
                 Console.WriteLine($"a+1={a++}");
-            else if(a<0)
+            else if (a < 0)
                 Console.WriteLine($"a-(-2)= {a + 2}");
             else
                 Console.WriteLine(10);
@@ -165,7 +165,7 @@ namespace integer
             if (c > 0)
                 s++;
             Console.WriteLine($"on sandar sany={s}");
-                                
+
         }
 
         static void if5()
@@ -200,17 +200,146 @@ namespace integer
             int a = int.Parse(Console.ReadLine());
             Console.Write("san engiz:");
             int b = int.Parse(Console.ReadLine());
-            int s = 0;
-            if (a > 0)
-                s++;
-            if (b > 0)
-                s++;
-           Console.WriteLine($"on sandar sany={s}");
+            if (a > b)
+                Console.WriteLine($"ulken san= {a}");
+            else if (a < b)
+                Console.WriteLine($"ulken san= {b}");
+            else
+                Console.WriteLine("Eki san ten");
 
+        }
+        static void if7()
+        {
+            Console.Write("san engiz:");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("san engiz:");
+            int b = int.Parse(Console.ReadLine());
+            if (a > b)
+                Console.WriteLine($" 1-wi san ulken ");
+            else if (a < b)
+                Console.WriteLine($" 2-wi san ulken ");
+            else
+                Console.WriteLine("Eki san ten");
+
+        }
+        static void if8()
+        {
+            Console.Write("san engiz:");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("san engiz:");
+            int b = int.Parse(Console.ReadLine());
+            if (a > b)
+            {
+                Console.WriteLine($"ulken san= {a}");
+                Console.WriteLine($"kiwi  san= {b}");
+            }
+
+            else if (a < b)
+            {
+                Console.WriteLine($"ulken san= {b}");
+                Console.WriteLine($"kiwi  san= {a}");
+            }
+            else
+                Console.WriteLine("Eki san ten");
+
+        }
+        static void if9()
+        {
+            Console.Write("'a' sany:");
+            float a = float.Parse(Console.ReadLine());
+            Console.Write("'b' sany :");
+            float b = float.Parse(Console.ReadLine());
+            float c;
+            if (a < b)
+            {
+                c = a;
+                a = b;
+                b = c;
+                Console.WriteLine($"a = {a}");
+                Console.WriteLine($"b = {b}");
+            }
+            else
+            {
+                Console.WriteLine($"a = {a}");
+                Console.WriteLine($"b = {b}");
+            }
+
+
+        }
+        static void if10()
+        {
+            Console.Write("'a' sany:");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("'b' sany :");
+            int b = int.Parse(Console.ReadLine());
+            if (a!=b)
+            Console.WriteLine($"eki san ten bolmasa: a+b = {a+b}");
+            else
+            {
+                a=b = 0;
+                Console.WriteLine($"eki san ten bolganda = {a}");
+                Console.WriteLine($"eki san ten bolganda = {b}");
+            }
+
+
+        }
+        static void if11()
+        {
+            Console.Write("'a' sany:");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("'b' sany :");
+            int b = int.Parse(Console.ReadLine());
+            if (a > b)
+            {
+                b = a;
+                Console.WriteLine($"eki san ten bolmasa: a= {a}, b={b}");
+            }
+                
+            else if (a<b)
+            {
+                a = b;
+                Console.WriteLine($"eki san ten bolmasa: a= {a}, b={b}");
+            }
+            else
+            {
+                a = b = 0;
+                Console.WriteLine($"eki san ten bolganda = {a}");
+                Console.WriteLine($"eki san ten bolganda = {b}");
+            }
+        }
+        static void if12()
+        {
+            Console.Write("a sanyn engiz:");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("b sanyn engiz:");
+            int b = int.Parse(Console.ReadLine());
+            Console.Write("c sanyn engiz:");
+            int c = int.Parse(Console.ReadLine());
+            if(a < b && a < c)
+                Console.WriteLine($"En kiwi san:{a}");
+            else if(b<a&&b<c)
+                Console.WriteLine($"En kiwi san:{b}");
+            else
+                Console.WriteLine($"En kiwi san:{c}");
+        }
+        static void if13()
+        {
+            Console.Write("a sanyn engiz:");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("b sanyn engiz:");
+            int b = int.Parse(Console.ReadLine());
+            Console.Write("c sanyn engiz:");
+            int c = int.Parse(Console.ReadLine());
+            if (a < b && b < c || a > b && b > c)
+                Console.WriteLine($"orta san:{b}");
+            else if (b < a && a < c || b > a && a > c)
+                Console.WriteLine($"orta san:{a}");
+            else if (c > a && b > c || c < a && b < c)
+                Console.WriteLine($"orta san:{c}");
         }
         static void Main(string[] args)
         {
-            if5();
+            if13();
 
             Console.ReadKey();
         }
