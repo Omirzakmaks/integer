@@ -425,11 +425,84 @@ namespace integer
             else
                 Console.WriteLine($"a={1}\n");
         }
+        static void if19()
+        {
+            Console.Write("a=");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b=");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("c=");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.Write("d=");
+            int d = Convert.ToInt32(Console.ReadLine());
+            int k=0;
+            if (a == b && b == c)
+                k = 4;
+            else if (a == b && a == d)
+                k = 3;
+            else if (a == c && c == d)
+                k = 2;
+            else if(b == c && b == d)
+                k = 1;
+            Console.WriteLine($"rettik nomer {k}");
+        }
+        static void if20()
+        {
+            Console.Write("a=");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b=");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("c=");
+            int c = Convert.ToInt32(Console.ReadLine());
+            int ras1 = Math.Abs(c - a);
+            int ras2 = Math.Abs(b - a);
+            if (ras2 >= ras1)
+                Console.WriteLine($"to4ka 'c' rastoenie={ras1}");
+            else  
+                Console.WriteLine($"to4ka 'b' rastoenie={ras2}");
+        }
+        static void if21()
+        {
+            Console.Write("a=");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b=");
+            int b = Convert.ToInt32(Console.ReadLine());
+            
+            if (a == 0 && b==0)
+                Console.WriteLine(0);
+            else if ( a==0)
+                Console.WriteLine(1);
+            else if(b==0)
+                Console.WriteLine(2);
+            else
+                Console.WriteLine(3);
 
+         }
+        static void if22()
+        {
+            Console.Write("a=");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b=");
+            int b = Convert.ToInt32(Console.ReadLine());
 
+            if (a > 0 && b > 0)
+                Console.WriteLine(1);
+
+            else if (a < 0&&b>0)
+                Console.WriteLine(2);
+
+            else if (a < 0 && b < 0)
+                Console.WriteLine(3);
+
+            else if(a > 0 && b < 0)
+                Console.WriteLine(4);
+            else
+                Console.WriteLine("os boinda jatyr");
+
+        }
         static void Main(string[] args)
         {
-            if18();
+            if22();
 
             Console.ReadKey();
         }
