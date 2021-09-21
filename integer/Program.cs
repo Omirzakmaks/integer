@@ -337,9 +337,99 @@ namespace integer
             else if (c > a && b > c || c < a && b < c)
                 Console.WriteLine($"orta san:{c}");
         }
+        static void if14()
+        {
+            Console.Write("a=");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b=");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("c=");
+            int c = Convert.ToInt32(Console.ReadLine());
+            int max,min;
+            if (a <= b && a <= c)
+                min = a;
+
+            else if (b <= a && b <= c)
+                min = b;
+            else
+                min = c;
+            if (a >= b && a >= c)
+                max = a;
+            else if (b >= a && b >= c)
+                max = b;
+            else
+                max = c;
+            Console.WriteLine($"min san={min}\nmax san={max}");
+        }
+        static void if15()
+        {
+            Console.Write("a=");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b=");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("c=");
+            int c = Convert.ToInt32(Console.ReadLine());
+            int min;
+            if (a <= b && a <= c)
+                min = a;
+
+            else if (b <= a && b <= c)
+                min = b;
+            else
+                min = c;
+             Console.WriteLine($"min san={a+b+c-min}\n");
+        }
+        static void if16()
+        {
+            Console.Write("a=");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b=");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("c=");
+            int c = Convert.ToInt32(Console.ReadLine());
+            int min;
+            if (a <= b && b <= c)
+                Console.WriteLine($"a={a*2}, b={b*2}, c={c*2}\n");
+            
+            else
+                Console.WriteLine($"a={a * -1}, b={b * -1}, c={c * -1}\n");
+        }
+        static void if17()
+        {
+            Console.Write("a=");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b=");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("c=");
+            int c = Convert.ToInt32(Console.ReadLine());
+            if (a <= b && b <= c)
+                Console.WriteLine($"a={a * 2}, b={b * 2}, c={c * 2}\n");
+            else if(a >=b && b >= c)
+                Console.WriteLine($"a={a * 2}, b={b * 2}, c={c * 2}\n");
+            else
+                Console.WriteLine($"a={a * -1}, b={b * -1}, c={c * -1}\n");
+        }
+        static void if18()
+        {
+            Console.Write("a=");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b=");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("c=");
+            int c = Convert.ToInt32(Console.ReadLine());
+            
+            if (a == b )
+                Console.WriteLine($"c={3}\n");
+            else if (a == c)
+                Console.WriteLine($"b={2}\n");
+            else
+                Console.WriteLine($"a={1}\n");
+        }
+
+
         static void Main(string[] args)
         {
-            if13();
+            if18();
 
             Console.ReadKey();
         }
