@@ -500,9 +500,83 @@ namespace integer
                 Console.WriteLine("os boinda jatyr");
 
         }
+        static void if23()
+        {
+            Console.Write("koordinata engiz: a1=");
+            int a1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b1=");
+            int b1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("koordinata engiz: a2=");
+            int a2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b2=");
+            int b2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("koordinata engiz: a3=");
+            int a3= Convert.ToInt32(Console.ReadLine());
+            Console.Write("b3=");
+            int b3 = Convert.ToInt32(Console.ReadLine());
+            int a4, b4;
+            if (a1 == a2)
+                a4 = a3;
+            else if (a1 == a3)
+                a4 = a2;
+            else a4 = a1;
+
+            if (b2 == b3)
+                b4 = b1;
+            else if (b2 == b1)
+                b4 = b3;
+            else b4 = b2;
+            Console.WriteLine($"a4={a4}\tb4={b4}");
+                                   
+        }
+        static void if24()
+        {
+            Console.Write("x= ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            double y;
+            if (x > 0)
+                y = 2 * Math.Sin(x);
+            else if (x <= 0)
+                y = 6 - x;
+            Console.WriteLine($"y= {y}");
+
+        }
+        static void if25()
+        {
+            Console.Write("x= ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            int y;
+            if (x < -2 || x > 2)
+                y = 2 * x;
+            else
+                y = -3 * x;
+            Console.WriteLine($"y= {y}");
+        }
+        static void if26()
+        {
+            Console.Write("x= ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            if (x <= 0)
+                Console.WriteLine(-x);
+            else if (x > 0 && x < 2)
+                Console.WriteLine(x * x);
+            else if (x >= 2)
+                Console.WriteLine(4);
+        }
+        static void if27()
+        {
+            Console.Write("x= ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            if (x < 0)
+                Console.WriteLine(0);
+            else if (x%2==0)
+                Console.WriteLine(1);
+            else if (x%2!=0)
+                Console.WriteLine(-1);
+        }
         static void Main(string[] args)
         {
-            if22();
+            if23();
 
             Console.ReadKey();
         }
