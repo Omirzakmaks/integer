@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+// Ctrl+K+D kod format
 
 namespace integer
 {
@@ -272,11 +273,11 @@ namespace integer
             int a = int.Parse(Console.ReadLine());
             Console.Write("'b' sany :");
             int b = int.Parse(Console.ReadLine());
-            if (a!=b)
-            Console.WriteLine($"eki san ten bolmasa: a+b = {a+b}");
+            if (a != b)
+                Console.WriteLine($"eki san ten bolmasa: a+b = {a + b}");
             else
             {
-                a=b = 0;
+                a = b = 0;
                 Console.WriteLine($"eki san ten bolganda = {a}");
                 Console.WriteLine($"eki san ten bolganda = {b}");
             }
@@ -294,8 +295,8 @@ namespace integer
                 b = a;
                 Console.WriteLine($"eki san ten bolmasa: a= {a}, b={b}");
             }
-                
-            else if (a<b)
+
+            else if (a < b)
             {
                 a = b;
                 Console.WriteLine($"eki san ten bolmasa: a= {a}, b={b}");
@@ -315,9 +316,9 @@ namespace integer
             int b = int.Parse(Console.ReadLine());
             Console.Write("c sanyn engiz:");
             int c = int.Parse(Console.ReadLine());
-            if(a < b && a < c)
+            if (a < b && a < c)
                 Console.WriteLine($"En kiwi san:{a}");
-            else if(b<a&&b<c)
+            else if (b < a && b < c)
                 Console.WriteLine($"En kiwi san:{b}");
             else
                 Console.WriteLine($"En kiwi san:{c}");
@@ -345,7 +346,7 @@ namespace integer
             int b = Convert.ToInt32(Console.ReadLine());
             Console.Write("c=");
             int c = Convert.ToInt32(Console.ReadLine());
-            int max,min;
+            int max, min;
             if (a <= b && a <= c)
                 min = a;
 
@@ -377,7 +378,7 @@ namespace integer
                 min = b;
             else
                 min = c;
-             Console.WriteLine($"min san={a+b+c-min}\n");
+            Console.WriteLine($"min san={a + b + c - min}\n");
         }
         static void if16()
         {
@@ -389,8 +390,8 @@ namespace integer
             int c = Convert.ToInt32(Console.ReadLine());
             int min;
             if (a <= b && b <= c)
-                Console.WriteLine($"a={a*2}, b={b*2}, c={c*2}\n");
-            
+                Console.WriteLine($"a={a * 2}, b={b * 2}, c={c * 2}\n");
+
             else
                 Console.WriteLine($"a={a * -1}, b={b * -1}, c={c * -1}\n");
         }
@@ -404,7 +405,7 @@ namespace integer
             int c = Convert.ToInt32(Console.ReadLine());
             if (a <= b && b <= c)
                 Console.WriteLine($"a={a * 2}, b={b * 2}, c={c * 2}\n");
-            else if(a >=b && b >= c)
+            else if (a >= b && b >= c)
                 Console.WriteLine($"a={a * 2}, b={b * 2}, c={c * 2}\n");
             else
                 Console.WriteLine($"a={a * -1}, b={b * -1}, c={c * -1}\n");
@@ -417,8 +418,8 @@ namespace integer
             int b = Convert.ToInt32(Console.ReadLine());
             Console.Write("c=");
             int c = Convert.ToInt32(Console.ReadLine());
-            
-            if (a == b )
+
+            if (a == b)
                 Console.WriteLine($"c={3}\n");
             else if (a == c)
                 Console.WriteLine($"b={2}\n");
@@ -435,14 +436,14 @@ namespace integer
             int c = Convert.ToInt32(Console.ReadLine());
             Console.Write("d=");
             int d = Convert.ToInt32(Console.ReadLine());
-            int k=0;
+            int k = 0;
             if (a == b && b == c)
                 k = 4;
             else if (a == b && a == d)
                 k = 3;
             else if (a == c && c == d)
                 k = 2;
-            else if(b == c && b == d)
+            else if (b == c && b == d)
                 k = 1;
             Console.WriteLine($"rettik nomer {k}");
         }
@@ -458,7 +459,7 @@ namespace integer
             int ras2 = Math.Abs(b - a);
             if (ras2 >= ras1)
                 Console.WriteLine($"to4ka 'c' rastoenie={ras1}");
-            else  
+            else
                 Console.WriteLine($"to4ka 'b' rastoenie={ras2}");
         }
         static void if21()
@@ -467,17 +468,17 @@ namespace integer
             int a = Convert.ToInt32(Console.ReadLine());
             Console.Write("b=");
             int b = Convert.ToInt32(Console.ReadLine());
-            
-            if (a == 0 && b==0)
+
+            if (a == 0 && b == 0)
                 Console.WriteLine(0);
-            else if ( a==0)
+            else if (a == 0)
                 Console.WriteLine(1);
-            else if(b==0)
+            else if (b == 0)
                 Console.WriteLine(2);
             else
                 Console.WriteLine(3);
 
-         }
+        }
         static void if22()
         {
             Console.Write("a=");
@@ -488,13 +489,13 @@ namespace integer
             if (a > 0 && b > 0)
                 Console.WriteLine(1);
 
-            else if (a < 0&&b>0)
+            else if (a < 0 && b > 0)
                 Console.WriteLine(2);
 
             else if (a < 0 && b < 0)
                 Console.WriteLine(3);
 
-            else if(a > 0 && b < 0)
+            else if (a > 0 && b < 0)
                 Console.WriteLine(4);
             else
                 Console.WriteLine("os boinda jatyr");
@@ -511,7 +512,7 @@ namespace integer
             Console.Write("b2=");
             int b2 = Convert.ToInt32(Console.ReadLine());
             Console.Write("koordinata engiz: a3=");
-            int a3= Convert.ToInt32(Console.ReadLine());
+            int a3 = Convert.ToInt32(Console.ReadLine());
             Console.Write("b3=");
             int b3 = Convert.ToInt32(Console.ReadLine());
             int a4, b4;
@@ -527,7 +528,7 @@ namespace integer
                 b4 = b3;
             else b4 = b2;
             Console.WriteLine($"a4={a4}\tb4={b4}");
-                                   
+
         }
         static void if24()
         {
@@ -536,7 +537,7 @@ namespace integer
             double y;
             if (x > 0)
                 y = 2 * Math.Sin(x);
-            else if (x <= 0)
+            else
                 y = 6 - x;
             Console.WriteLine($"y= {y}");
 
@@ -569,14 +570,36 @@ namespace integer
             int x = Convert.ToInt32(Console.ReadLine());
             if (x < 0)
                 Console.WriteLine(0);
-            else if (x%2==0)
+            else if (x % 2 == 0)
                 Console.WriteLine(1);
-            else if (x%2!=0)
+            else if (x % 2 != 0)
                 Console.WriteLine(-1);
+        }
+        static void if28()
+        {
+            Console.Write("jyl engiz xxxx= ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            if (x % 400 == 0)
+                Console.WriteLine(366);
+            else if (x % 4 == 0 && x % 100 != 0)
+                Console.WriteLine(366);
+            else
+                Console.WriteLine(365);
+
+        }
+        static void if29()
+        {
+            Console.WriteLine("san engiz: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            if(x==0)
+                Console.WriteLine("Nol sany");
+            else if(x%2==0&&x>0)
+                Console.WriteLine("Jup on san");
+            else if(x%2!=0&&x>0)
         }
         static void Main(string[] args)
         {
-            if23();
+            if29();
 
             Console.ReadKey();
         }
