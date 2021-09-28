@@ -591,15 +591,39 @@ namespace integer
         {
             Console.WriteLine("san engiz: ");
             int x = Convert.ToInt32(Console.ReadLine());
-            if(x==0)
+
+            if (x==0)
                 Console.WriteLine("Nol sany");
-            else if(x%2==0&&x>0)
-                Console.WriteLine("Jup on san");
-            else if(x%2!=0&&x>0)
+
+            else if(x%2==0 && x>0)
+                Console.WriteLine("Jup, on san");
+
+            else if(x%2!=0 && x<0)
+                Console.WriteLine("teris, tak san");
+
+            else if (x % 2 == 0 && x < 0)
+                        Console.WriteLine("Jup, teris san");
         }
-        static void Main(string[] args)
+        static void if30()
         {
-            if29();
+            Console.WriteLine("1-999 aralykta san engiz: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            if (x <= 999)
+            {
+                if (x % 2 == 0) Console.Write("jup ");
+                else Console.Write("tak ");
+
+                if (x / 100 > 0) Console.WriteLine("uw tanbaly san");
+                else if (x / 10 >= 10 || x/10>0) Console.WriteLine("eki tanbaly san");
+                else if (x / 100 == 0 && x / 10 == 0) Console.WriteLine("bir tanbaly san");
+            }
+            else Console.WriteLine("baska san engiz");
+            
+        }
+
+            static void Main(string[] args)
+        {
+            if30();
 
             Console.ReadKey();
         }
